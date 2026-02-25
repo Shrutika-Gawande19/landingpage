@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Glow Essence</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+nav{
+    height:70px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 60px;
+    position:fixed;
+    width:100%;
+    top:0;
+    background:rgba(255,255,255,0.2);
+    backdrop-filter:blur(10px);
+    z-index:1000;
+}
+
+
+.logo{
+    font-size:22px;
+    font-weight:bold;
+    color:#ad1457;
+}
+
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:25px;
+}
+
+.nav-right a{
+    text-decoration:none;
+    color:#ad1457;
+    font-weight:500;
+    position:relative;
+}
+
+
+.badge{
+    background:#ad1457;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:12px;
+  
+}
+
+
+
+
+
+.main{
+    display:flex;
+    height:100vh;
+    margin-top:70px;
+}
+
+
+.left{
+    width:50%;
+    background:linear-gradient(135deg,#fce4ec,#f8bbd0);
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+    padding:40px;
+    gap:40px;
+}
+
+.left img{
+    height:340px;
+    width:300px;
+    transition:0.4s ease;
+}
+
+.left img:hover{
+    transform:scale(1.05);
+}
+
+
+.lip-info{
+    text-align:center;
+    max-width:280px;
+}
+
+.lip-info h3{
+    color:#ad1457;
+    font-size:20px;
+    margin-bottom:8px;
+}
+
+.lip-info p{
+    font-size:14px;
+    color:#6d214f;
+    line-height:1.5;
+}
+
+.vertical-text{
+    position:absolute;
+    left:20px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    font-size:14px;
+    letter-spacing:4px;
+    color:#ad1457;
+    font-weight:bold;
+}
+
+
+.right{
+    width:50%;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:60px;
+    color:white;
+    background:url("https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?q=80&w=1200") center/cover no-repeat;
+}
+
+.right::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(173,20,87,0.55);
+    z-index:0;
+}
+
+.right h1,
+.right p,
+.right button{
+    position:relative;
+    z-index:1;
+}
+
+.right h1{
+    font-size:48px;
+    margin-bottom:20px;
+}
+
+.right p{
+    font-size:18px;
+    margin-bottom:30px;
+    line-height:1.6;
+    max-width:420px;
+}
+
+button{
+    width:180px;
+    padding:12px;
+    border:none;
+    background:white;
+    color:#ad1457;
+    font-size:16px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#f8bbd0;
+    transform:translateY(-3px);
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="logo">Glow Essence</div>
+    <div class="nav-right">
+        <a href="#Home">Home</a>
+        <a href="#Products">Products</a>
+        <a href="#Contact">Contact</a>
+        <div class="badge">NEW LAUNCH</div>
+    </div>
+</nav>
+
+<div class="main">
+
+    <div class="left">
+        <div class="vertical-text">MAKEUP • GLAM • BEAUTY</div>
+
+        <img src="https://www.lakmeindia.com/cdn/shop/files/5_c8c8d42d-121e-4574-92e7-4ca8b2d47bae.png?v=1727952202"
+             alt="Lakme Product">
+             <div class="lip-info">
+    <h3>Lakmé Absolute Matte – Ruby Silk</h3>
+    <p>
+        A rich, intense matte lip shade with long-lasting color
+        and a smooth velvet finish for bold, confident glam.
+    </p>
+             </div>
+    </div>
+
+    <div class="right">
+        <h1>Glow Essence</h1>
+        <p>
+            Elevate your everyday glam with our premium makeup collection.
+            From bold lip shades to flawless finishes,
+            create stunning looks that express your confidence and style.
+        </p>
+        <button>Shop Now</button>
+    </div>
+
+</div>
+
+</body>
+</html>
